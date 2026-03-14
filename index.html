@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>미로 시그니처 통합 리스트</title>
-    <style>
+<style>
     :root {
         --periwinkle: #CCCCFF;
         --dark-periwinkle: #7a7aff;
@@ -14,8 +14,8 @@
         --cam-pink: #FF69B4;
         --hot-red: #FF4500;
         
-        /* 🟡 슈퍼열혈 색상 수정: 가독성을 위해 더 짙은 금색(#B8860B)으로 변경 */
-        --super-gold: #B8860B; 
+        /* 🔴 슈퍼열혈 색상: 눈에 확 띄고 고급스러운 크림슨 레드(#D32F2F)로 변경 */
+        --super-red: #D32F2F; 
         
         --hover-blue: #e8e8ff;
         --hover-deep-blue: #e0e0ff;
@@ -23,8 +23,8 @@
         --hover-pink: #fff0f5;
         --hover-red: #fff0eb;
         
-        /* 호버 배경도 글자색과 어울리게 살짝 조정 */
-        --hover-gold: #fff9e6; 
+        /* 호버 배경도 붉은색에 맞춰 아주 연한 핑크빛 미색으로 조정 */
+        --hover-super-red: #ffebee; 
     }
     
     body { background-color: var(--bg-color); font-family: 'Pretendard', sans-serif; display: flex; justify-content: center; padding: 20px; margin: 0; }
@@ -37,7 +37,8 @@
     .member-title { color: var(--member-green); border-left-color: var(--member-green); }
     .cam-title { color: var(--cam-pink); border-left-color: var(--cam-pink); }
     .hot-title { color: var(--hot-red); border-left-color: var(--hot-red); }
-    .super-title { color: var(--super-gold); border-left-color: var(--super-gold); }
+    /* 클래스 변수명도 super-red로 적용 완료 */
+    .super-title { color: var(--super-red); border-left-color: var(--super-red); }
     
     #searchInput { width: 100%; padding: 18px; border: 2px solid #eee; border-radius: 15px; box-sizing: border-box; font-size: 16px; margin-bottom: 20px; }
     .list-container { height: 660px; overflow-y: auto; padding-right: 10px; }
@@ -55,8 +56,9 @@
     .cam-sig:hover { background-color: var(--hover-pink); }
     .hot-sig .price { color: var(--hot-red); font-weight: 800; width: 60px; font-size: 16px; }
     .hot-sig:hover { background-color: var(--hover-red); }
-    .super-sig .price { color: var(--super-gold); font-weight: 800; width: 60px; font-size: 16px; }
-    .super-sig:hover { background-color: var(--hover-gold); }
+    /* 가격과 호버 부분도 super-red로 적용 완료 */
+    .super-sig .price { color: var(--super-red); font-weight: 800; width: 60px; font-size: 16px; }
+    .super-sig:hover { background-color: var(--hover-super-red); }
     .name { font-weight: 600; color: #444; font-size: 16px; text-align: right; }
 </style>
 </head>
@@ -152,6 +154,7 @@ filterList();
 </body>
 
 </html>
+
 
 
 
